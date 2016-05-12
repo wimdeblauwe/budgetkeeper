@@ -54,6 +54,8 @@ class BudgetItemViewController: UIViewController, UITextFieldDelegate {
         
         descriptionTextField.addTarget(self, action: #selector(BudgetItemViewController.textFieldDidChange(_:)), forControlEvents: UIControlEvents.EditingChanged)
         priceTextField.addTarget(self, action: #selector(BudgetItemViewController.textFieldDidChange(_:)), forControlEvents: UIControlEvents.EditingChanged)
+        
+        descriptionTextField.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
